@@ -42,17 +42,16 @@ CPM_AddModule("es"
 
 # ++ MODULE: ES Cereal
 CPM_AddModule("es_cereal"
-  SOURCE_DIR "../cpm-es-cereal"
+  GIT_REPOSITORY "https://github.com/iauns/cpm-es-cereal"
+  GIT_TAG "origin/master"
   USE_EXISTING_VER TRUE
-  EXPORT_MODULE TRUE
-  )
+  EXPORT_MODULE TRUE)
 
 # ++ MODULE: ES Systems
 CPM_AddModule("es_systems"
   GIT_REPOSITORY "https://github.com/iauns/cpm-es-systems"
   GIT_TAG "origin/master"
-  USE_EXISTING_VER TRUE
-  )
+  USE_EXISTING_VER TRUE)
 
 # This call will ensure all include directories and definitions are present
 # in the target. These correspond to the modules that we added above.
