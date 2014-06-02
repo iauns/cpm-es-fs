@@ -25,9 +25,9 @@ const char* Filesystem::getFSSystemName()
   return FSSystem::getName();
 }
 
-void Filesystem::registerSystems()
+void Filesystem::registerSystems(CPM_ES_ACORN_NS::Acorn& core)
 {
-  CPM_ES_SYSTEMS_NS::SystemCore::registerSystem<FSSystem>();
+  core.registerSystem<FSSystem>();
 }
 
 } // namespace CPM_ES_FS_NS

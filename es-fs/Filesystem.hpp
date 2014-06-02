@@ -4,6 +4,8 @@
 #include <string>
 #include <functional>
 
+#include <es-acorn/Acorn.hpp>
+
 namespace CPM_ES_FS_NS {
 
 /// Possibly use https://github.com/d5/node.native for C++ libuv support.
@@ -33,7 +35,7 @@ public:
   static const char* getFSSystemName();
 
   /// Registers file system.
-  static void registerSystems();
+  static void registerSystems(CPM_ES_ACORN_NS::Acorn& core);
 };
 
 } // namespace CPM_ES_FS_NS 

@@ -5,10 +5,10 @@
 
 namespace CPM_ES_FS_NS {
 
-void registerAll(CPM_ES_CEREAL_NS::CerealCore& core)
+void registerAll(CPM_ES_ACORN_NS::Acorn& core)
 {
   // Systems
-  Filesystem::registerSystems();
+  Filesystem::registerSystems(core);
 
   // Components
   core.registerComponent<StaticFS>();   // Non-serializable
