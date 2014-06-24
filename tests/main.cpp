@@ -7,8 +7,8 @@
 
 #include <gtest/gtest.h>
 
-#include <es-fs/FileSystem.hpp>
-#include <es-fs/FileSystemSync.hpp>
+#include <es-fs/Filesystem.hpp>
+#include <es-fs/FilesystemSync.hpp>
 #include <es-fs/Registration.hpp>
 
 uint64_t gRandomSeed = 0;
